@@ -16,6 +16,8 @@ His blog is at http://www.catonmat.net  --  good coders code, great reuse.
 Table of contents:
     [01] Chapter  1: Toys
          01-toys.ss
+    [02] Chapter  2: Do It, Do It Again, and Again, and Again...
+         02-do-it-again.ss
     ...
     work in progress, adding new chapters every other day
 
@@ -41,6 +43,26 @@ The law of cons:  The primitive cons takes two arguments.
 The law of null?: The primitive null? is defined only for lists.
 The law of eq?:   The primitive eq? takes two arguments.
                   Each must be a non-numeric atom.
+
+
+[02]-Chapter-2-Do-It-Do-It-Again-and-Again-and-Again--------------------------
+
+See 02-do-it-again.ss file for code examples.
+
+Chapter 2 introduces two recursive functions and steps through them again, and
+again, and again until you understand recursion.
+
+The first function introduced is lat? that tests if the given list consists
+only of atoms (lat stands for list of atoms).
+
+The second function introduced is member? that tests if an element is in a
+lat.
+
+It also defines a preliminary version of the first commandment that always
+should be followed when programming recursively.
+
+The first commandment:
+Always ask null? as the first question in expressing any function.
 
 
 ------------------------------------------------------------------------------
