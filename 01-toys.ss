@@ -129,12 +129,14 @@
 ; The primitive /null?/ is defined only for lists                            ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; Examples of atom?
+; We first need to define atom? for Scheme as it's not a primitive
 ;
 (define atom?
  (lambda (x)
     (and (not (pair? x)) (not (null? x)))))  
   
+; Examples of atom?
+;
 (atom? 'Harry)                          ; true
 (atom? '(Harry had a heap of apples))   ; false
 
