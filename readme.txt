@@ -18,6 +18,8 @@ Table of contents:
          01-toys.ss
     [02] Chapter  2: Do It, Do It Again, and Again, and Again...
          02-do-it-again.ss
+    [03] Chapter  3: Cons the Magnificent
+         03-cons-the-magnificent.ss
     ...
     work in progress, adding new chapters every other day
 
@@ -61,9 +63,18 @@ lat.
 It also defines a preliminary version of the first commandment that always
 should be followed when programming recursively.
 
-The first commandment:
-Always ask null? as the first question in expressing any function.
+.----------------------------------------------------------------------------.
+| The first commandment:                                                     |
+|                                                                            |
+| Always ask null? as the first question in expressing any function.         |
+'----------------------------------------------------------------------------'
 
+
+[03]-Chapter-3-Cons-the-Magnificent-------------------------------------------
+
+See 03-cons-the-magnificent.ss file for code examples.
+
+coming soon
 
 ------------------------------------------------------------------------------
 
