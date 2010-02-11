@@ -47,6 +47,14 @@ The law of eq?:   The primitive eq? takes two arguments.
                   Each must be a non-numeric atom.
 
 
+.----------------------------------------------------------------------------.
+|                                                                            |
+|                         This space reserved for                            |
+|                              JELLY STAINS!                                 |
+|                                                                            |
+'----------------------------------------------------------------------------'
+
+
 [02]-Chapter-2-Do-It-Do-It-Again-and-Again-and-Again--------------------------
 
 See 02-do-it-again.ss file for code examples.
@@ -74,7 +82,42 @@ should be followed when programming recursively.
 
 See 03-cons-the-magnificent.ss file for code examples.
 
-coming soon
+Chapter 3 explains how to build lists with cons. It's done via showing how to
+write a function that removes an element from the list. Then the second
+commandment is presented.
+
+.----------------------------------------------------------------------------.
+| The second commandment:                                                    |
+|                                                                            |
+| Use cons to build lists.                                                   |
+'----------------------------------------------------------------------------'
+
+Next, it's precisely explained how to do recursion and when to stop recursing,
+this leads to the third and forth commandments. The examples include a
+function that inserts an element in a list to the right and to the left of the
+given element, and a function that removes the first occurence of an element
+from a list.
+
+.----------------------------------------------------------------------------.
+| The third commandment                                                      |
+|                                                                            |
+| When building lists, describe the first typical element, and then cons it  |
+| onto the natural recursion.                                                |
+'----------------------------------------------------------------------------'
+
+Next the multi-versions of the same functions are written that insert element
+to the right and to the left of all ocurrences of the given element in a list,
+and a function that removes all occurences of an element from a list.
+
+.----------------------------------------------------------------------------.
+| The fourth commandment                                                     |
+|                                                                            |
+| Always change at least one argument while recurring. It must be changed to |
+| be closer to termination. The changing argument must be tested in the      |
+| termination condition: when using cdr, test the termination with null?.    |
+|                                                                            |
+'----------------------------------------------------------------------------'
+
 
 ------------------------------------------------------------------------------
 
