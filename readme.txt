@@ -20,6 +20,8 @@ Table of contents:
          02-do-it-again.ss
     [03] Chapter  3: Cons the Magnificent
          03-cons-the-magnificent.ss
+    [04] Chapter  4: Numbers Games
+         04-numbers-games.ss
     ...
     work in progress, adding new chapters every other day
 
@@ -72,7 +74,7 @@ It also defines a preliminary version of the first commandment that always
 should be followed when programming recursively.
 
 .----------------------------------------------------------------------------.
-| The first commandment:                                                     |
+| The first commandment: (preliminary version)                               |
 |                                                                            |
 | Always ask null? as the first question in expressing any function.         |
 '----------------------------------------------------------------------------'
@@ -93,30 +95,91 @@ commandment is presented.
 '----------------------------------------------------------------------------'
 
 Next, it's precisely explained how to do recursion and when to stop recursing,
-this leads to the third and forth commandments. The examples include a
-function that inserts an element in a list to the right and to the left of the
-given element, and a function that removes the first occurence of an element
-from a list.
+this leads to the third commandment and a preliminary version of the fourth
+commandment. The examples include a function that inserts an element in a list
+to the right and to the left of the given element, and a function that removes
+the first occurrence of an element from a list.
 
 .----------------------------------------------------------------------------.
-| The third commandment                                                      |
+| The third commandment:                                                     |
 |                                                                            |
 | When building lists, describe the first typical element, and then cons it  |
 | onto the natural recursion.                                                |
 '----------------------------------------------------------------------------'
 
 Next the multi-versions of the same functions are written that insert element
-to the right and to the left of all ocurrences of the given element in a list,
-and a function that removes all occurences of an element from a list.
+to the right and to the left of all occurrences of the given element in a list,
+and a function that removes all occurrences of an element from a list.
 
 .----------------------------------------------------------------------------.
-| The fourth commandment                                                     |
+| The fourth commandment: (preliminary version)                              |
 |                                                                            |
 | Always change at least one argument while recurring. It must be changed to |
 | be closer to termination. The changing argument must be tested in the      |
 | termination condition: when using cdr, test the termination with null?.    |
+'----------------------------------------------------------------------------'
+
+[04]-Chapter-4-Numbers-Games--------------------------------------------------
+
+See 04-numbers-games.ss file for code examples.
+
+Chapter 4 builds the arithmetic system from the primitives add1 and sub1.
+
+Using add1 the usual + addition operation on two numbers is developed, next
+using sub1 the usual - subtraction operation is developed, then multiplication
+and exponentiation are written.
+
+Along the way the first and fourth commandments are revisited:
+
+.----------------------------------------------------------------------------.
+|                                                                            |
+| The first commandment (first revision)                                     |
+|                                                                            |
+| When recurring on a list of atoms, lat, ask two questions about it:        |
+| (null? lat) and else.                                                      |
+| When recurring on a number, n, ask two questions about it: (zero? n) and   |
+| else.                                                                      |
 |                                                                            |
 '----------------------------------------------------------------------------'
+
+.----------------------------------------------------------------------------.
+|                                                                            |
+| The fourth commandment (first revision)                                    |
+|                                                                            |
+| Always change at least one argument while recurring. It must be changed to |
+| be closer to termination. The changing argument must be tested in the      |
+| termination condition:                                                     |
+| when using cdr, test the termination with null? and                        |
+| when using sub1, test termination with zero?.                              |
+|                                                                            |
+'----------------------------------------------------------------------------'
+
+And the fifth commandment is postulated:
+
+.----------------------------------------------------------------------------.
+|                                                                            |
+| The fifth commandment                                                      |
+|                                                                            |
+| When building a value with o+, always use 0 for the value of the           |
+| terminating line, for adding 0 does not change the value of an addition.   |
+|                                                                            |
+| When building a value with o*, always use 1 for the value of the           |
+| terminating line, for multiplying by 1 does not change the value of a      |
+| multiplication.                                                            |
+|                                                                            |
+| When building a value with cons, always consider () for the value of the   |
+| terminating line.                                                          |
+|                                                                            |
+'----------------------------------------------------------------------------'
+
+Next the < greater than and > less than operations are derived, then the =
+equals operation and quotient operation.
+
+Then various utility functions are written, such as length that determines the
+length of a list, pick that picks the n-th element from the list, rempick that
+removes the n-th element from the list, no-nums that extracts all non-numeric
+elements from the list, all-nums that does the opposite and extracts all
+numeric elements from the list.
 
 
 ------------------------------------------------------------------------------
