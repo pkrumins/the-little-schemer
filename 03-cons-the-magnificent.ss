@@ -220,7 +220,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;                                                                            ;
-; The fourth commandment                                                     ;
+; The fourth commandment (preliminary)                                       ;
 ;                                                                            ;
 ; Always change at least one argument while recurring. It must be changed to ;
 ; be closer to termination. The changing argument must be tested in the      ;
