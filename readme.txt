@@ -22,6 +22,8 @@ Table of contents:
          03-cons-the-magnificent.ss
     [04] Chapter  4: Numbers Games
          04-numbers-games.ss
+    [05] Chapter  5: *Oh My Gawd*: It's Full of Stars
+         05-full-of-stars.ss
     ...
     work in progress, adding new chapters every other day
 
@@ -132,18 +134,15 @@ and exponentiation are written.
 Along the way the first and fourth commandments are revisited:
 
 .----------------------------------------------------------------------------.
-|                                                                            |
 | The first commandment (first revision)                                     |
 |                                                                            |
 | When recurring on a list of atoms, lat, ask two questions about it:        |
 | (null? lat) and else.                                                      |
 | When recurring on a number, n, ask two questions about it: (zero? n) and   |
 | else.                                                                      |
-|                                                                            |
 '----------------------------------------------------------------------------'
 
 .----------------------------------------------------------------------------.
-|                                                                            |
 | The fourth commandment (first revision)                                    |
 |                                                                            |
 | Always change at least one argument while recurring. It must be changed to |
@@ -151,13 +150,11 @@ Along the way the first and fourth commandments are revisited:
 | termination condition:                                                     |
 | when using cdr, test the termination with null? and                        |
 | when using sub1, test termination with zero?.                              |
-|                                                                            |
 '----------------------------------------------------------------------------'
 
 And the fifth commandment is postulated:
 
 .----------------------------------------------------------------------------.
-|                                                                            |
 | The fifth commandment                                                      |
 |                                                                            |
 | When building a value with o+, always use 0 for the value of the           |
@@ -169,7 +166,6 @@ And the fifth commandment is postulated:
 |                                                                            |
 | When building a value with cons, always consider () for the value of the   |
 | terminating line.                                                          |
-|                                                                            |
 '----------------------------------------------------------------------------'
 
 Next the < greater than and > less than operations are derived, then the =
@@ -180,6 +176,58 @@ length of a list, pick that picks the n-th element from the list, rempick that
 removes the n-th element from the list, no-nums that extracts all non-numeric
 elements from the list, all-nums that does the opposite and extracts all
 numeric elements from the list.
+
+[05]-Chapter-5-Oh-My-Gawd-It's-Full-of-Stars----------------------------------
+
+See 05-full-of-stars.ss file for code examples.
+
+Chapter 5 introduces you to S-expressions and functions that manipulate them.
+
+The first commandment is finalized:
+
+.----------------------------------------------------------------------------.
+| The first commandment (final version)                                      |
+|                                                                            |
+| When recurring on a list of atoms, lat, ask two questions about it:        |
+| (null? lat) and else.                                                      |
+| When recurring on a number, n, ask two questions about it: (zero? n) and   |
+| else.                                                                      |
+| When recurring on a list of S-expressions, l, ask three questions about    |
+| it: (null? l), (atom? (car l)), and else.                                  |
+|                                                                            |
+'----------------------------------------------------------------------------'
+
+And the fourth commandment is stated:
+
+.----------------------------------------------------------------------------.
+| The fourth commandment (final version)                                     |
+|                                                                            |
+| Always change at least one argument while recurring. When recurring on a   |
+| list of atoms, lat, use (cdr l). When recurring on a number, n, use        |
+| (sub1 n). And when recurring on a list of S-expressions, l, use (car l)    |
+| and (cdr l) if neither (null? l) nor (atom? (car l)) are true.             |
+|                                                                            |
+| It must be changed to be closer to termination. The changing argument must |
+| be tested in the termination condition:                                    |
+| * when using cdr, test the termination with null? and                      |
+| * when using sub1, test termination with zero?.                            |
+'----------------------------------------------------------------------------'
+
+Functions rember, insertR, insertL, occur, subst, member are then rewritten to
+manipulate S-expressions and not just lists of atoms.
+
+Then functions for comparing two S-expressions are written, and rewritten
+several times to teach you Scheme for great good.
+
+Finally the sixth commandment is presented:
+
+.----------------------------------------------------------------------------.
+|                                                                            |
+| The sixth commandment                                                      |
+|                                                                            |
+| Simplify only after the function is correct.                               |
+|                                                                            |
+'----------------------------------------------------------------------------'
 
 
 ------------------------------------------------------------------------------
