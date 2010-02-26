@@ -26,6 +26,8 @@ Table of contents:
          05-full-of-stars.ss
     [06] Chapter  6: Shadows
          06-shadows.ss
+    [07] Chapter  7: Shadows
+         07-friends-and-relations.ss
     ...
     work in progress, adding new chapters every other day
 
@@ -256,6 +258,19 @@ commandment follows:
 |                                                                            |
 | Use help functions to abstract from representations.                       |
 '----------------------------------------------------------------------------'
+
+Finally chapter shows how numbers 0, 1, 2, ... can be represented purely as
+lists. The number 0 becomes (), number 1 becomes (()), 2 becomes (() ()),
+3 becomes (() () ()), ... . Then functions for adding, subtracting and
+checking if the new number is zero are written. But beware of shadows, the
+lat? function doesn't work on a list of these numbers.
+
+
+[07]-Chapter-7-Friends-and-Relations------------------------------------------
+
+See 07-friends-and-relations.ss file for code examples.
+
+Chapter 7 ...
 
 
 ------------------------------------------------------------------------------
