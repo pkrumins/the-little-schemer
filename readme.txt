@@ -24,6 +24,8 @@ Table of contents:
          04-numbers-games.ss
     [05] Chapter  5: *Oh My Gawd*: It's Full of Stars
          05-full-of-stars.ss
+    [06] Chapter  6: Shadows
+         06-shadows.ss
     ...
     work in progress, adding new chapters every other day
 
@@ -194,7 +196,6 @@ The first commandment is finalized:
 | else.                                                                      |
 | When recurring on a list of S-expressions, l, ask three questions about    |
 | it: (null? l), (atom? (car l)), and else.                                  |
-|                                                                            |
 '----------------------------------------------------------------------------'
 
 And the fourth commandment is stated:
@@ -222,11 +223,38 @@ several times to teach you Scheme for great good.
 Finally the sixth commandment is presented:
 
 .----------------------------------------------------------------------------.
-|                                                                            |
 | The sixth commandment                                                      |
 |                                                                            |
 | Simplify only after the function is correct.                               |
+'----------------------------------------------------------------------------'
+
+[06]-Chapter-6-Shadows--------------------------------------------------------
+
+See 06-shadows.ss file for code examples.
+
+Chapter 6 develops an evaluator for simple arithmetic expressions involving
+only +, * and exp.
+
+The seventh commandment is formulated as evaluator is developed:
+
+.----------------------------------------------------------------------------.
+| The seventh commandment                                                    |
 |                                                                            |
+| Recur on the subparts that are of the same nature:                         |
+| * On the sublists of a list.                                               |
+| * On the subexpressions of an arithmetic expression.                       |
+'----------------------------------------------------------------------------'
+
+Next different representations for arithmetic expressions are introduced. An
+expression (1 + 2) can be written as (+ 1 2) and (1 2 +) or even (plus 1 2).
+
+The concept of abstraction from representations is introduced. The eighth
+commandment follows:
+
+.----------------------------------------------------------------------------.
+| The eighth commandment                                                     |
+|                                                                            |
+| Use help functions to abstract from representations.                       |
 '----------------------------------------------------------------------------'
 
 
