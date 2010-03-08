@@ -270,7 +270,18 @@ lat? function doesn't work on a list of these numbers.
 
 See 07-friends-and-relations.ss file for code examples.
 
-Chapter 7 ...
+Chapter 7 is all about sets. It defines functions to test if the given list is
+a set, to construct a set from a list, to test if set1 is a subset of set2, to
+determine if two sets are equal, to find intersect of two sets, to fund
+intersect of a bunch of sets, to find union of two sets.
+
+Then it introduces pairs and writes several helper functions: first that
+returns the first element of a pair, second that returns the second element of
+a pair, and build that builds a pair. (Remember commandment eight.)
+
+Then it plays with mathematical functions. It introduces relations, creates
+functions to reverse relations, and test if the given list of relations is a
+function and is it a full function.
 
 
 ------------------------------------------------------------------------------
