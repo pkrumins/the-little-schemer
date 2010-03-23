@@ -28,6 +28,8 @@ Table of contents:
          06-shadows.ss
     [07] Chapter  7: Shadows
          07-friends-and-relations.ss
+    [08] Chapter  8: Lambda the Ultimate
+         08-lambda-the-ultimate.ss
     ...
     work in progress, adding new chapters every other day
 
@@ -283,6 +285,41 @@ Then it plays with mathematical functions. It introduces relations, creates
 functions to reverse relations, and test if the given list of relations is a
 function and is it a full function.
 
+
+[08]-Chapter-8-Lambda-the-Ultimate--------------------------------------------
+
+See 08-lambda-the-ultimate.ss file for code examples.
+
+Chapter 8 introduces the concept that functions can be passed and returned
+from functions. It also introduces currying.
+
+Next it reviews several functions from Chapter 3 and shows how they differ
+only by two lines. Those lines can be factored out as separate functions that
+simplifies the whole thing.
+
+The ninth commandment follows.
+
+.----------------------------------------------------------------------------.
+| The ninth commandment                                                      |
+|                                                                            |
+| Abstract common patterns with a new function.                              |
+'----------------------------------------------------------------------------'
+
+Finally continuations are introduced via a bunch of examples, for example,
+multirember&co function collects the elements to be removed in one list, and
+the elements that were not removed in the other. After it's done, the
+collector is called, which is your own function so you may do anything you
+wish with those two lists.
+
+The final, tenth commandment, is stated.
+
+.----------------------------------------------------------------------------.
+| The tenth commandment                                                      |
+|                                                                            |
+| Build functions to collect more than one value at a time.                  |
+'----------------------------------------------------------------------------'
+
+And remember, an apple a day keeps the doctor away.
 
 ------------------------------------------------------------------------------
 
