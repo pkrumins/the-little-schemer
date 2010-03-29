@@ -30,8 +30,10 @@ Table of contents:
          07-friends-and-relations.ss
     [08] Chapter  8: Lambda the Ultimate
          08-lambda-the-ultimate.ss
-    ...
-    work in progress, adding new chapters every other day
+    [09] Chapter  9: ... and Again, and Again, and Again ...
+         09-and-again.ss
+    [10] Chapter 10: What Is the Value of All of This?
+         10-value-of-all-of-this.ss
 
 
 [01]-Chapter-1-Toys-----------------------------------------------------------
@@ -320,6 +322,28 @@ The final, tenth commandment, is stated.
 '----------------------------------------------------------------------------'
 
 And remember, an apple a day keeps the doctor away.
+
+
+[09]-Chapter-9-and-Again-and-Again-and-Again----------------------------------
+
+See 09-and-again.ss file for code examples.
+
+...
+
+Used this chapter to write an article on derivation of Y-Combinator:
+http://www.catonmat.net/blog/derivation-of-ycombinator/
+
+...
+
+
+[10]-Chapter-10-What-Is-the-Value-of-All-of-This------------------------------
+
+See 10-value-of-all-of-this.ss file for code examples.
+
+Chapter 10 implements Scheme in Scheme. That's it.
+
+It was a great adventure and now it's time for banquet!
+
 
 ------------------------------------------------------------------------------
 
