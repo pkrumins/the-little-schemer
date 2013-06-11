@@ -111,7 +111,7 @@
       (cond
         ((null? l) '())
         ((test? (car l) old)
-         (cons new (cons old (cdr l))))
+         (cons old (cons new (cdr l))))
         (else
           (cons (car l) ((insertR-f test?) new old (cdr l))))))))
 
