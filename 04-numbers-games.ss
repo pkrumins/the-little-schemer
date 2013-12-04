@@ -353,7 +353,7 @@
 
 ; Example of rempick-one
 ;
-(rempick-one 4 '(hotdogs with hot mustard))     ; '(hotdogs with mustard)
+(rempick-one 4 '(hotdogs with hot mustard))     ; '(hotdogs with hot)
 
 ;
 ; Go get yourself this wonderful book and have fun with these examples!
