@@ -186,8 +186,9 @@
   'chuck
   '((how much (wood)) could ((a (wood) chuck)) (((chuck)))
     (if (a) ((wood chuck))) could chuck wood))
-; ==> ((how much (wood)) could ((a (wood) chuck pecker)) (((chuck pecker)))
-;      (if (a) ((wood chuck pecker))) could chuck pecker wood)
+; ==> ((how much (wood)) could ((a (wood) pecker chuck)) (((pecker chuck)))
+;       (if (a) ((wood pecker chuck))) could pecker chuck wood)
+
 
 ; The member* function determines if element is in a list l of s-exps
 ;
